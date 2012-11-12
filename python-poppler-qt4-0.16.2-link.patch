@@ -1,0 +1,17 @@
+--- setup.py.link	2011-05-20 11:41:55.000000000 +0200
++++ setup.py	2011-12-27 05:12:58.446686072 +0100
+@@ -86,12 +86,13 @@
+         os.path.join(qt_inc_dir, 'QtGui'),
+         os.path.join(qt_inc_dir, 'QtXml'),
+     ],
++    'libraries': ['QtGui', 'QtCore'],
+ }
+ 
+ pkg_config('poppler-qt4', ext_args)
+ 
+ if 'libraries' not in ext_args:
+-    ext_args['libraries'] = ['poppler-qt4']
++    ext_args['libraries'] = ['poppler-qt4', 'QtGui', 'QtCore']
+ 
+ # hack to provide our options to sip on its invocation:
+ build_ext_base = sipdistutils.build_ext
