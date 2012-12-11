@@ -1,12 +1,12 @@
 Name:		python-poppler-qt4
-Version:	0.16.2
+Version:	0.16.3
 Release:	1
 Summary:	Python bindings for the Poppler PDF rendering library
 Group:		Office
 License:	LGPLv2+
 URL:		http://code.google.com/p/%{name}/
 Source0:	http://python-poppler-qt4.googlecode.com/files/python-poppler-qt4-%{version}.tar.gz
-Patch0:		python-poppler-qt4-0.16.2-link.patch
+Patch0:		python-poppler-qt4-0.16.3-link.patch
 BuildRequires:	python-devel
 BuildRequires:	python-qt4-devel
 BuildRequires:	libpoppler-qt4-devel >= 0.12.0
@@ -34,3 +34,10 @@ python setup.py install --skip-build --prefix=%{buildroot}%{_prefix}
 %doc ChangeLog LICENSE TODO README
 %{python_sitearch}/popplerqt4.so
 %{python_sitearch}/python_poppler*
+
+
+%changelog
+* Tue Jan 17 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.16.2-1
++ Revision: 761983
+- imported package python-poppler-qt4
+
