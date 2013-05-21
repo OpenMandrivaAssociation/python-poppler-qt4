@@ -9,7 +9,7 @@ Source0:	http://python-poppler-qt4.googlecode.com/files/python-poppler-qt4-%{ver
 Patch0:		python-poppler-qt4-0.16.3-link.patch
 BuildRequires:	python-devel
 BuildRequires:	python-qt4-devel
-BuildRequires:	libpoppler-qt4-devel >= 0.12.0
+BuildRequires:	pkgconfig(poppler-qt4) >= 0.12.0
 BuildRequires:	python-sip >= 4.9.1
 
 %description
