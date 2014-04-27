@@ -1,6 +1,6 @@
 Name:		python-poppler-qt4
 Version:	0.16.3
-Release:	2
+Release:	3
 Summary:	Python bindings for the Poppler PDF rendering library
 Group:		Office
 License:	LGPLv2+
@@ -22,13 +22,8 @@ programs written in Python and using Poppler set.
 %patch0 -p0 -b .link
 
 
-%build
-python setup.py build
-
-
 %install
-python setup.py install --skip-build --prefix=%{buildroot}%{_prefix}
-
+python setup.py install --single-version-externally-managed --root=%{buildroot}
 
 %files
 %doc ChangeLog LICENSE TODO README
