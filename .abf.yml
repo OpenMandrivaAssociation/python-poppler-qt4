@@ -1,4 +1,2 @@
-removed_sources:
-  python-poppler-qt4-0.16.2.tar.gz: 48867d203ba83d4e818730f6ddcdbbf567b450cf
 sources:
-  python-poppler-qt4-0.16.3.tar.gz: fe6aa650a1a917caeedd407ae0c428a5de9eefb8
+  python-poppler-qt4-0.24.0.tar.gz: 57161b095cb253a75b157a6f9b4be6bf408e5dbe
