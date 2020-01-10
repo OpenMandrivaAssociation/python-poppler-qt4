@@ -19,7 +19,7 @@ programs written in Python and using Poppler set.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %install
 python setup.py install --single-version-externally-managed --root=%{buildroot} build_ext -lQtGui -lQtCore
